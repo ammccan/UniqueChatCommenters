@@ -6,12 +6,11 @@ TextFiles = []
 FName = []
 csv_rows = []
 commenterid = []
-unique_id = []
-NC = []
-for root, dirs, files in os.walk("/Users/ammcc/Desktop/"):
+
+for root, dirs, files in os.walk("/Users/aaaa/Desktop/"):
     for file in files:
         if file.endswith("chatinfo.txt"):
-            path = "/Users/ammcc/Desktop/"
+            path = "/Users/aaaa/Desktop/"
             filepath = os.path.join(path,file)
             head, filename = os.path.split(filepath)
             TextFiles.append(filepath)
